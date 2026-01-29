@@ -1,0 +1,29 @@
+/* Contact Styles */
+.contact-section {
+    position: relative;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    width: 100%;
+}
+
+.contact-form textarea,
+.contact-form input {
+    color: white;
+    /* Ensure text is visible on dark bg */
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem !important;
+        /* Override inline styles if needed, or better yet rely on class */
+    }
+}

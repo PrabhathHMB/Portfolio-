@@ -1,0 +1,8 @@
+/* Blog Styles */
+.blog-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 1.5rem;
+}

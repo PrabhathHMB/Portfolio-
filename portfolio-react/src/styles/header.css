@@ -1,0 +1,75 @@
+/* Header Styles */
+
+/* Ensure Header Layout */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Logo left, Nav/Contact right */
+    width: 100%;
+}
+
+.nav-link {
+    color: var(--text-main);
+    margin: 0 15px;
+    /* Spacing between links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    /* No margin-right: auto; let space-between handle it */
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    display: flex;
+    /* Default flex for desktop (overridden by media query below if logical flip desired, but usually we define mobile first or desktop first) */
+    align-items: center;
+}
+
+/* Mobile Visibility Handling */
+
+/* Tablet & Mobile (less than 769px) */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+        /* Hide nav links */
+    }
+
+    .menu-btn {
+        display: flex;
+        /* Show menu button */
+    }
+
+    .contact-btn {
+        display: none;
+        /* Hide contact button on mobile header (it's in the menu) */
+    }
+}
+
+/* Desktop (769px and up) */
+@media (min-width: 769px) {
+    .menu-btn {
+        display: none;
+        /* Hide menu button */
+    }
+
+    .desktop-nav {
+        display: flex;
+        /* Show nav links */
+    }
+
+    .contact-btn {
+        display: flex;
+        /* Show contact button */
+    }
+}

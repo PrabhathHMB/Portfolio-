@@ -1,0 +1,70 @@
+import React from 'react';
+import '../styles/intro.css';
+
+const Intro = () => {
+    return (
+        <section id="intro" className="intro-section">
+            <div className="intro-content">
+
+                <h2>Welcome to my Digital Space</h2>
+                <p className="mission-statement">
+                    My mission is to transform challenges into innovative, user-centric applications. I strive to blend technical
+                    expertise with creative solutions that bring ideas to life.
+                </p>
+                <p>
+                    I thrive on turning complexity into simplicity through cutting-edge technology and relentless curiosity. Here
+                    you'll find a showcase of my skills, projects, and insights.
+                </p>
+
+                <div className="skills-grid">
+
+                    <div className="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+                        <svg className="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <h3>Web Development</h3>
+                        <p>Building responsive and performant web applications with modern tech. I focus on clean code and seamless
+                            design integration.</p>
+                    </div>
+
+                    <div className="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+                        <svg className="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                        <h3>Cloud Computing</h3>
+                        <p>Using cloud platforms to build scalable and efficient solutions. I leverage virtual infrastructures to
+                            enhance agility and performance.</p>
+                    </div>
+
+                    <div className="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+                        <svg className="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <h3>Project Management</h3>
+                        <p>Collaborating and delivering projects from idea to launch. I ensure effective communication and streamline
+                            workflows to achieve success.</p>
+                    </div>
+
+                    <div className="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+                        <svg className="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M3 10h2l1-2h8l1 2h2M6 14h12M8 18h8M12 6V4m0 0a2 2 0 00-2 2h4a2 2 0 00-2-2z">
+                            </path>
+                        </svg>
+                        <h3>DevOps Engineering</h3>
+                        <p>Automating workflows and bridging dev and ops for smoother software delivery. I’m passionate about creating
+                            reliable pipelines that reduce manual overhead.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Intro;

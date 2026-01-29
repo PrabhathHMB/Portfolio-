@@ -1,0 +1,9 @@
+/* About Styles */
+.aboutContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-list li {
+    transition: all 0.3s ease;
+}

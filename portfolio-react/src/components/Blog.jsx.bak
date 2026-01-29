@@ -1,0 +1,147 @@
+import React from 'react';
+import '../styles/blog.css';
+
+const Blog = () => {
+    return (
+        <section id="blog" className="blog-section">
+            <div className="blog-inner">
+                <h2 className="blog-heading">Latest Insights</h2>
+
+                <p className="blog-intro">
+                    Welcome to my blog – your go-to spot for in-depth explorations on technology, cloud computing, cybersecurity,
+                    and modern digital strategies. Dive in to discover insights, practical tips, and thought-provoking analyses that
+                    keep you ahead of the curve.
+                </p>
+                <div className="blog-grid">
+
+                    <div className="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
+                        <div className="blog-image-wrapper">
+                            <img src="/assets/b1.webp" alt="From Virtual Machines to Containers" className="blog-image" />
+                            <div className="blog-badge">Cloud Computing</div>
+                        </div>
+                        <div className="blog-content">
+                            <h3 className="blog-title">From Virtual Machines to Containers</h3>
+                            <p className="blog-description">
+                                Exploring the evolution of infrastructure from traditional virtual machines to modern containerized
+                                environments. This post details the benefits of containerization and real-world use cases that enhance
+                                scalability and performance.
+                            </p>
+                            <div className="blog-footer">
+                                <div className="blog-meta">
+                                    <span className="blog-date">Mar 18, 2025</span>
+                                    <span className="blog-readtime">6 min read</span>
+                                </div>
+
+                                <a href="#" className="blog-link" title="Read the full post">
+                                    Read More
+                                    <svg className="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200">
+                        <div className="blog-image-wrapper">
+                            <img src="/assets/b2.webp" alt="The Rise of Multi-Cloud Strategies" className="blog-image" />
+                            <div className="blog-badge">Cloud Strategy</div>
+                        </div>
+                        <div className="blog-content">
+                            <h3 className="blog-title">The Rise of Multi-Cloud Strategies</h3>
+                            <p className="blog-description">
+                                A deep dive into how businesses are leveraging multiple cloud platforms for flexibility and enhanced
+                                resilience. This post breaks down the strategic advantages and challenges of adopting a multi-cloud
+                                approach.
+                            </p>
+                            <div className="blog-footer">
+                                <div className="blog-meta">
+                                    <span className="blog-date">Nov 16, 2024</span>
+                                    <span className="blog-readtime">7 min read</span>
+                                </div>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    className="blog-link" title="Read the full post">
+                                    Read More
+                                    <svg className="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
+                        <div className="blog-image-wrapper">
+                            <img src="/assets/b3.webp" alt="Why Businesses Are Shifting to the Cloud" className="blog-image" />
+                            <div className="blog-badge">Cloud Adoption</div>
+                        </div>
+                        <div className="blog-content">
+                            <h3 className="blog-title">Why Businesses Are Shifting to the Cloud</h3>
+                            <p className="blog-description">
+                                Discussing the key benefits of cloud computing and why businesses are increasingly moving away from
+                                traditional IT infrastructures. Learn about cost efficiency, scalability, and the competitive edge offered
+                                by cloud solutions.
+                            </p>
+                            <div className="blog-footer">
+                                <div className="blog-meta">
+                                    <span className="blog-date">Nov 16, 2024</span>
+                                    <span className="blog-readtime">5 min read</span>
+                                </div>
+                                <a href="#"
+                                    target="_blank" rel="noopener noreferrer" className="blog-link" title="Read the full post">
+                                    Read More
+                                    <svg className="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="400">
+                        <div className="blog-image-wrapper">
+                            <img src="/assets/b4.webp" alt="CIA Triad in Cyber Security" className="blog-image" />
+                            <div className="blog-badge">Cyber Security</div>
+                        </div>
+                        <div className="blog-content">
+                            <h3 className="blog-title">CIA Triad in Cyber Security</h3>
+                            <p className="blog-description">
+                                Understanding the fundamental principles of Confidentiality, Integrity, and Availability in cybersecurity.
+                                Explore practical applications of the CIA triad and how organizations can safeguard their digital assets
+                                effectively.
+                            </p>
+                            <div className="blog-footer">
+                                <div className="blog-meta">
+                                    <span className="blog-date">Sep 29, 2023</span>
+                                    <span className="blog-readtime">2 min read</span>
+                                </div>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    className="blog-link" title="Read the full post">
+                                    Read More
+                                    <svg className="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button style={{ marginTop: '10px' }} className="see-more-btn">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    See More
+                    <svg className="see-more-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </button>
+        </section>
+    );
+};
+
+export default Blog;
