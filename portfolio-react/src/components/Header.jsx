@@ -67,9 +67,6 @@ const Header = () => {
                             borderRadius: '50%',
                             width: '40px',
                             height: '40px',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
                             cursor: 'pointer'
                         }}
                     >

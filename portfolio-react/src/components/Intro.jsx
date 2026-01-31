@@ -80,6 +80,16 @@ const Intro = () => {
                             title: "DevOps Engineering",
                             desc: "Automating CI/CD pipelines and infrastructure as code to accelerate deployment and improve stability.",
                             icon: "M3 10h2l1-2h8l1 2h2M6 14h12M8 18h8M12 6V4m0 0a2 2 0 00-2 2h4a2 2 0 00-2-2z"
+                        },
+                        {
+                            title: "Desktop Application Development",
+                            desc: "Experienced in building robust, high-performance desktop applications. C# • .NET • SQL Server • Windows Forms",
+                            icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        },
+                        {
+                            title: "Database Management",
+                            desc: "Proficient in designing normalized database schemas, optimizing queries, and managing data integrity. MySQL • MongoDB • Oracle DB • SQL Server",
+                            icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
                         }
                     ].map((item, index) => (
                         <motion.div

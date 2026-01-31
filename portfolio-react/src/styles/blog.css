@@ -1,8 +1,164 @@
-/* Blog Styles */
+/* Blog Section Container */
+.blog-section {
+    padding: 5rem 2rem;
+    background: transparent; /* Assuming background is handled by global body/section styles */
+}
+
+.blog-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Blog Card - Glassmorphism & Layout */
 .blog-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px -10px rgba(0, 242, 254, 0.2);
+    border-color: var(--primary-color);
+}
+
+/* Alternating Layout: Even items reversed */
+.blog-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Image Wrapper */
+.blog-image-wrapper {
+    flex: 0 0 45%; /* Takes up 45% of the card width */
+    max-width: 45%;
+    position: relative;
+    border-radius: 12px;
     overflow: hidden;
-    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the area without distortion */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image {
+    transform: scale(1.05);
+}
+
+/* Badge overlay on image */
+.blog-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(15, 23, 42, 0.8);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--glass-border);
+}
+
+/* Blog Content */
+.blog-content {
+    flex: 1; /* Takes up remaining space */
+}
+
+.blog-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.blog-description {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Footer & Meta */
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1rem;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.blog-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-card {
+        flex-direction: column !important; /* Stack vertically on mobile */
+        text-align: left; /* Or center if preferred */
+        padding: 1.5rem;
+    }
+
+    .blog-image-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-badge {
+        top: 0.8rem;
+        left: 0.8rem;
+    }
 }

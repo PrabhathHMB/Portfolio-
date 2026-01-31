@@ -17,10 +17,14 @@ const Hero = () => {
                         <h1 style={{ color: 'var(--text-main)' }}>Hi, I'm <span style={{ color: 'var(--primary-color)' }}>Bhanuka Prabhath</span></h1>
                         <h2 className="hero-role" style={{ color: 'var(--secondary-color)', marginBottom: '1rem', marginTop: '0.5rem' }}>Web Developer / Full Stack Developer</h2>
                         <p className="hero-bio" style={{ fontSize: '1.1rem', maxWidth: '600px', marginBottom: '1.5rem' }}>
-                            A proactive final-year undergraduate pursuing dual degrees (B.Sc. & BIT) with a
-                            unique blend of scientific analysis and technical skill. Passionate about web
-                            development with hands-on experience in HTML, CSS, JavaScript,PHP and React.
-                            Possesses a strong mathematical foundation and a results-driven mindset.
+                            A proactive final-year undergraduate pursuing dual degrees (B.Sc. & BIT)
+                            with a unique blend of scientific analysis and technical skill. Passionate
+                            about web development, I have hands-on experience building full-stack
+                            applications using HTML, CSS, JavaScript,PHP,Bootstrap, React, Spring Boot,MongoDB and MySQL. I combine a
+                            strong mathematical foundation with a results-driven mindset to solve
+                            complex problems.
+
+
                         </p>
 
                         <p className="hero-subtitle" style={{ fontStyle: 'italic', marginBottom: '2rem', color: 'var(--text-secondary)' }}>
